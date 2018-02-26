@@ -21,6 +21,7 @@ class CategoryForm extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault()
+    console.log('handle submit category-form',this.props);
     if (this.props.buttonText === 'create') this.props.onComplete(this.state)
     if (this.props.buttonText === 'update') this.props.update(this.state);
   }

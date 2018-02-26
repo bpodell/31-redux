@@ -30,13 +30,12 @@ class CategoryItem extends React.Component{
   }
 
   render(){
-    console.log('item level',this.props);
     return(
         <li>
           <h2>{this.props.category.name}</h2>
           <p>{this.props.category.budget}</p>
           <button type='submit' onClick={this.handleClick}> delete </button>
-          <CategoryForm buttonText='update' update={this.props.update}/>
+          <CategoryForm buttonText='update' update={this.props.update} category={this.props.category}/>
         </li>
     );
   }

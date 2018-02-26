@@ -6,7 +6,6 @@ import CategoryItem from '../category/category-item'
 
 class Dashboard extends React.Component {
   render() {
-    console.log(this.props);
     return (
       <section>
         <h1>Expenses</h1>
